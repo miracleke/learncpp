@@ -1,13 +1,30 @@
 #include<iostream>
+#include<iomanip>
+#include<cmath>
 using namespace std;
 int main () {
-	int a,b,c;
-	long long s;
-	a = 43245454;
-	b = 5435454;
-	c = 64365464;
-	s = (long long) a + b + c;
-	cout << s << endl;
-
-	return 0;
+    double a, b, c, i, d, e, f;
+    double sum;
+    double g, h;
+    e = 0;
+    sum = 0;
+    g = 0;
+    h = 0;
+    cin >> a >> b >> c;
+    for(i = 0;i <= a; i++)
+    {
+	sum += i;
+    }
+    for(d = 1;d <= b; d++)
+    {
+	pow(d,2);
+	e += pow(d,2);
+    }	
+    for(f = 1;f <= c; f++)
+    {
+        g += 1 / f * 1.0;	    
+    }	
+    h = sum + e + g;	
+    cout << fixed << setprecision(2) << h << endl;	
+    return 0;
 }
