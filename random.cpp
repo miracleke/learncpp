@@ -13,7 +13,7 @@ int main() {
          cin >> n;
 	 num ++;
     }
-    while(n != x + y && num < 3);
+    while ((!(n == x + y )) && num < 3);
     cout << num << endl;
     if(num >= 3)
     {
